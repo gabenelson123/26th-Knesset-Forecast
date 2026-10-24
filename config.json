@@ -1,0 +1,41 @@
+{
+  "election_date": "2026-10-27",
+  "seats": 120,
+  "threshold_pct": 3.25,
+  "poll_window_start": "2026-09-08",
+  "parties": {
+    "likud":           {"name": "Likud",                        "bloc": "right"},
+    "yashar":          {"name": "Yashar (Eisenkot)",            "bloc": "opp"},
+    "together":        {"name": "Together (Bennett)",           "bloc": "opp"},
+    "democrats":       {"name": "The Democrats",                "bloc": "opp"},
+    "shas":            {"name": "Shas",                         "bloc": "right"},
+    "joint_list":      {"name": "Joint List",                   "bloc": "arab"},
+    "utj":             {"name": "United Torah Judaism",         "bloc": "right"},
+    "otzma_yehudit":   {"name": "Otzma Yehudit",                "bloc": "right"},
+    "rzp":             {"name": "Religious Zionism-Zehut",      "bloc": "right"},
+    "yisrael_beiteinu":{"name": "Yisrael Beiteinu",             "bloc": "opp"},
+    "raam":            {"name": "Ra'am",                        "bloc": "arab"},
+    "reserv_nep":      {"name": "Reservists & Economic Party",  "bloc": "opp"},
+    "amcha_yisrael":   {"name": "Amcha Yisrael (Winter)",       "bloc": "right"},
+    "haredi_public":   {"name": "Haredi Public",                "bloc": "right"},
+    "blue_white":      {"name": "Blue and White (withdrew 19.10)", "bloc": "opp"}
+  },
+  "surplus_agreements": [
+    ["together", "yisrael_beiteinu"],
+    ["yashar", "democrats"],
+    ["joint_list", "raam"],
+    ["likud", "rzp"],
+    ["shas", "utj"]
+  ],
+  "other_lists_pct": 1.0,
+  "firm_aliases": {"Filber": "SF+ND", "Lazar": "LRI+P4A", "Madgam": "Midgam R&C", "Midgam Project": "MP+TM+SN+A", "Yossi Tatik": "Yossi Tatika"},
+  "aggregation": {"half_life_days": 10, "house_anchor": "equal_weight_mean"},
+  "simulation": {
+    "n_sims": 20000,
+    "seed": 26,
+    "party_sd_coef": 0.25,
+    "bloc_shock_sd_pts": 1.0,
+    "arab_turnout_log_sd": 0.12,
+    "blue_white_share_pct": 0.3
+  }
+}
