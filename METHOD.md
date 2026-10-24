@@ -46,7 +46,7 @@ The allocation code reproduces the official 2022 result seat for seat.
 The score is $\sum_p |\hat{y}_p - y_p|$. For each party, the value that minimises expected absolute error is the median of its simulated seat distribution:
 
 $$
-\hat{y}_p = \arg\min_{y}\ \mathbb{E}\,\lvert Y_p - y\rvert = \operatorname{median}(Y_p)
+\hat{y}_p = \arg\min_{y}\ \mathbb{E}\,|Y_p - y| = \mathrm{median}(Y_p)
 $$
 
 This handles threshold parties correctly: a list with a 22% chance of passing is forecast at 0, not at its mean of 0.9. If the medians don't sum to 120, I apply the $\pm 1$ adjustments that increase expected error the least.
