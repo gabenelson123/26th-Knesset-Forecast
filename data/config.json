@@ -36,6 +36,6 @@
     "party_sd_coef": 0.25,
     "bloc_shock_sd_pts": 1.0,
     "arab_turnout_log_sd": 0.12,
-    "blue_white_share_pct": 0.3
+    "blue_white_share_pct": 0
   }
 }
