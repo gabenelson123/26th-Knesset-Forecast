@@ -2,7 +2,7 @@
 
 **Model:** house-effect-adjusted poll aggregation, Monte Carlo simulation of election-day vote shares, exact Bader-Ofer seat allocation with the 2026 surplus-vote agreements, and an L1-optimal point forecast.
 
-**1. Data.** All seat-projection polls published since the candidate lists were finalised (8 Sep 2026), 61 polls from 8 polling houses, taken from the Wikipedia opinion-polling page (via an open-source snapshot) and from the outlets' own reports for the most recent polls. Each poll's parties sum to 120.
+**1. Data.** All seat-projection polls published since the candidate lists were finalised (8 Sep 2026), 70 polls from 8 polling houses, taken from the Wikipedia opinion-polling page (via an open-source snapshot) and from the outlets' own reports for the most recent polls. Each poll's parties sum to 120.
 
 **2. Seats to vote shares.** Polls publish seats, and seats are a non-linear function of votes because of the 3.25% threshold. For each poll, a list below the threshold keeps its published percentage. A list with seats gets share = seats/120 × (100 − W), where W is the share wasted on sub-threshold lists in that poll plus 1% for the tail of tiny lists.
 
@@ -30,4 +30,4 @@ The allocation code reproduces the official 2022 result seat for seat.
 **Main assumptions and risks:**
 - On average, the polling houses are unbiased.
 - There is no systematic Haredi or right-wing under-polling correction.
-- Blue and White, which withdrew on 19 Oct, keeps a residual 0.3%.
+- Blue and White, which withdrew on 19 Oct, is set to 0%.
