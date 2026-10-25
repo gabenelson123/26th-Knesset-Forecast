@@ -27,7 +27,7 @@
     ["likud", "rzp"],
     ["shas", "utj"]
   ],
-  "other_lists_pct": 1.0,
+  "other_lists_pct": 0.7,
   "firm_aliases": {"Filber": "SF+ND", "Lazar": "LRI+P4A", "Madgam": "Midgam R&C", "Midgam Project": "MP+TM+SN+A", "Yossi Tatik": "Yossi Tatika"},
   "aggregation": {"half_life_days": 10, "house_anchor": "equal_weight_mean"},
   "simulation": {
