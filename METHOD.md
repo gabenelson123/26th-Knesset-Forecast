@@ -12,7 +12,7 @@ $$
 s_i = \frac{\text{seats}_i}{120}\,\bigl(100 - W\bigr),
 $$
 
-where $W$ is the share wasted on sub-threshold lists in that poll, plus 1% for the tail of tiny lists.
+where $W$ is the share wasted on sub-threshold lists in that poll, plus 0.7% for the tail of tiny lists.
 
 ### 3. Aggregation
 For each party $p$ I fit weighted least squares:
